@@ -8,8 +8,7 @@ body {
   flex-wrap: nowrap;
 }
 
-.movie-app > .row > * {
-  margin: 0;
+.movie-list > * {
   padding: 0;
   width: auto;
 }
