@@ -1,9 +1,9 @@
-import MovieList from './components/Movielist';
 import { useState, useEffect, React } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import MovieListHeading from './components/MovieHeading';
 import SearchBox from './components/SearchBox';
+import MovieList from './components/Movielist';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="container-fluid movie-app">
-      <div className="row d-flex align-items-center">
+      <div className="row d-flex align-items-center header">
         <MovieListHeading heading="Movies" />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
