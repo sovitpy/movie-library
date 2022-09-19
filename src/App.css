@@ -8,11 +8,6 @@ body {
   flex-wrap: nowrap;
 }
 
-.movie-list > * {
-  padding: 0;
-  width: auto;
-}
-
 .header {
   background-color: #e50914;
   color: #fff;
