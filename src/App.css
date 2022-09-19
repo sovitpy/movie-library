@@ -9,11 +9,40 @@ body {
 }
 
 .header {
-  background-color: #e50914;
   color: #fff;
   padding: 10px;
   font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 1rem;
   z-index: 2;
+}
+
+.header:first-child {
+  background-color: #e50914;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 200ms;
+}
+
+.image-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s ease;
 }
